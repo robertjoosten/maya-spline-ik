@@ -1,5 +1,6 @@
 """			
-Create a Spline IK from any curve in Maya.
+Create a Spline IK setup on a curve. The setup features variable stretch and 
+squash, variable rotation and sliding on curve.
 
 .. figure:: https://github.com/robertjoosten/rjSplineIK/raw/master/data/header.png
    :align: center
@@ -26,7 +27,7 @@ Command line
         forwardDirection="x"
     )
 
-Display UI
+Display UI **NOT SUPPORTED YET**
 ::
     import rjSplineIK.ui
     rjSplineIK.ui.show()    
@@ -39,6 +40,7 @@ only occur in the areas that manipulates as opposed to it scaling as a whole.
 
 .. figure:: https://github.com/robertjoosten/rjSplineIK/raw/master/data/stretchSquash.gif
    :align: center
+   
    Stretch and Squash demo
    
 The other benefit of using this module over a regular spline IK is the fact 
@@ -47,14 +49,17 @@ limited to the beginning and end.
 
 .. figure:: https://github.com/robertjoosten/rjSplineIK/raw/master/data/partialTwist.gif
    :align: center
+   
    Partial Twist demo
 
 .. figure:: https://github.com/robertjoosten/rjSplineIK/raw/master/data/shift.gif
    :align: center
+   
    Shift demo
       
-The Spline IK class is flexible for creation, before the create function
-is called some other attributes can be changed as well.
+Apart from the main settings, the control colour, position and orientation is 
+adjustable. This can be done on the Spline IK class before the create function
+is called.
 
     * controlShape
     * rootControlShape
@@ -68,13 +73,10 @@ is called some other attributes can be changed as well.
 
     * orientToCurve
     * orientRootToCurve  
-
-Code
-====
 """
 
 from .create import SplineIK
 
-__author__ = "Robert Joosten"
+__author__  = "Robert Joosten"
 __version__ = "0.7.0"
-__email__ = "rwm.joosten@gmail.com"
+__email__   = "rwm.joosten@gmail.com"
