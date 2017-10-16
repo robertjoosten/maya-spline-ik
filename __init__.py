@@ -59,3 +59,7 @@ Code
 """
 
 from .create import SplineIK
+
+__author__ = "Robert Joosten"
+__version__ = "0.7.0"
+__email__ = "rwm.joosten@gmail.com"
