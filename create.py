@@ -30,9 +30,11 @@ class SplineIK(Settings):
     generated and not just limited to the beginning and end.
 
     Once the class is initialized the user can change attributes that
-    are defined in the :class:`Settings` class that gets inherited.
+    are defined in the :class:`rjSplineIK.settings.Settings` class that 
+    gets inherited.
 
-    Once the user parameters are set the :func:`.create` can be ran.
+    Once the user parameters are set the :func:`SplineIK.create` 
+    can be ran.
     """
     def __init__(self):
         Settings.__init__(self)

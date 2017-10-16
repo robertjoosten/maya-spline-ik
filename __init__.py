@@ -1,6 +1,9 @@
 """			
 Create a Spline IK from any curve in Maya.
 
+.. figure:: https://github.com/robertjoosten/rjSplineIK/raw/master/data/header.png
+   :align: center
+
 Installation
 ============
 Copy the **rjSplineIK** folder to your Maya scripts directory
