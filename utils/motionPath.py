@@ -1,6 +1,6 @@
 from maya import cmds
 
-from rigging.utils import attribute
+from . import attribute
 
 def attachToMotionPath(
         curve,
