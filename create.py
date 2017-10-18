@@ -1135,7 +1135,7 @@ class SplineIK(Settings):
     def create(
             self, 
             name,
-            nurbsCurve,
+            curve_,
             numJoints, 
             upDirection="y", 
             worldUpDirection="y", 
@@ -1147,7 +1147,7 @@ class SplineIK(Settings):
         parsed with various variables to customise the result.
         
         :param name: name that is used to prefix all nodes
-        :param nurbsCurve: curve to attach the Spline IK to.
+        :param curve_: curve to attach the Spline IK to.
         :param numJoints: number of joints to be distributed on the curve
         :param upDirection: "x", "y" or "z", default "y"
         :param worldUpDirection: "x", "y" or "z", default "y"
@@ -1155,7 +1155,7 @@ class SplineIK(Settings):
         """
         # variables
         self.name = name
-        self.curve = nurbsCurve
+        self.curve = curve_
         self.numJoints = numJoints
         self.upDirection = upDirection
         self.forwardDirection = forwardDirection

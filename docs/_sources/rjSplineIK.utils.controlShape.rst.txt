@@ -1,0 +1,7 @@
+rjSplineIK\.utils\.controlShape module
+======================================
+
+.. automodule:: rjSplineIK.utils.controlShape
+    :members:
+    :undoc-members:
+    :show-inheritance:

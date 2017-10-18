@@ -1,0 +1,7 @@
+rjSplineIK
+==========
+
+.. toctree::
+   :maxdepth: 4
+
+   rjSplineIK

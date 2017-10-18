@@ -1,0 +1,273 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>rjSplineIK.utils.curve module &#8212; rjSplineIK  &#39;&#39; documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     ' &#39;&#39;',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">rjSplineIK  &#39;&#39; documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-rjSplineIK.utils.curve">
+<span id="rjsplineik-utils-curve-module"></span><h1>rjSplineIK.utils.curve module<a class="headerlink" href="#module-rjSplineIK.utils.curve" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="rjSplineIK.utils.curve.convertToBezierCurve">
+<code class="descclassname">rjSplineIK.utils.curve.</code><code class="descname">convertToBezierCurve</code><span class="sig-paren">(</span><em>curve</em><span class="sig-paren">)</span><a class="headerlink" href="#rjSplineIK.utils.curve.convertToBezierCurve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if the parsed curve is a bezier curve, if this is not the case
+convert the curve to a bezier curve.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>curve</strong> (<em>str</em>) – Name of curve</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="rjSplineIK.utils.curve.createCurveShape">
+<code class="descclassname">rjSplineIK.utils.curve.</code><code class="descname">createCurveShape</code><span class="sig-paren">(</span><em>name</em>, <em>points</em><span class="sig-paren">)</span><a class="headerlink" href="#rjSplineIK.utils.curve.createCurveShape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a curve and rename the shapes to be unique.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>name</strong> (<em>str</em>) – Name of curve</li>
+<li><strong>points</strong> (<em>list</em>) – List of points.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="rjSplineIK.utils.curve.createFollicle">
+<code class="descclassname">rjSplineIK.utils.curve.</code><code class="descname">createFollicle</code><span class="sig-paren">(</span><em>name</em>, <em>curve</em>, <em>parameter</em>, <em>forwardDirection='z'</em>, <em>upDirection='y'</em>, <em>overrideNormal=None</em>, <em>subtractPositionFromNormal=False</em><span class="sig-paren">)</span><a class="headerlink" href="#rjSplineIK.utils.curve.createFollicle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a follicle on a curve. The name will be used for the
+creation of all of the nodes. The overrideNormal attribute can be
+used if the up vector needs to be any different then what the
+curve can provide, this can be the translation attribute of a
+transform. The subtractPositionFromNormal can be used of the
+normal parsed is in world space, this means that the normal will
+be converted to local space.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> (<em>str</em>) – </li>
+<li><strong>curve</strong> (<em>str</em>) – curve to attach follicle too</li>
+<li><strong>parameter</strong> (<em>float</em>) – parameter on curve between 0-1</li>
+<li><strong>forwardDirection</strong> (<em>str</em>) – (“x”, “y”, “z”), default “z”</li>
+<li><strong>upDirection</strong> (<em>str</em>) – (“x”, “y”, “z”), default “y”</li>
+<li><strong>overrideNormal</strong> (<em>str</em>) – override normal connection, (eg. translate)</li>
+<li><strong>subtractPositionFromNormal</strong> (<em>bool</em>) – subtract the position from the normal</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">locator, pointOnCurve, aimConstraint</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tuple</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="rjSplineIK.utils.curve.nearestPointOnCurve">
+<code class="descclassname">rjSplineIK.utils.curve.</code><code class="descname">nearestPointOnCurve</code><span class="sig-paren">(</span><em>curve</em>, <em>pos</em><span class="sig-paren">)</span><a class="headerlink" href="#rjSplineIK.utils.curve.nearestPointOnCurve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find the nearest point on a curve, the function will return
+the parameter and point. The point is of type OpenMaya.MPoint.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>curve</strong> (<em>str</em>) – </li>
+<li><strong>pos</strong> (<em>list</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">parameter, point</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">float, OpenMaya.MPoint</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="rjSplineIK.utils.curve.numCVs">
+<code class="descclassname">rjSplineIK.utils.curve.</code><code class="descname">numCVs</code><span class="sig-paren">(</span><em>curve</em><span class="sig-paren">)</span><a class="headerlink" href="#rjSplineIK.utils.curve.numCVs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the number of CVs of a curve.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>curve</strong> – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">number of cvs</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="rjSplineIK.utils.curve.parameterLength">
+<code class="descclassname">rjSplineIK.utils.curve.</code><code class="descname">parameterLength</code><span class="sig-paren">(</span><em>curve</em><span class="sig-paren">)</span><a class="headerlink" href="#rjSplineIK.utils.curve.parameterLength" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the parameter length of a curve.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>curve</strong> (<em>str</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">parameter length or curve</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">float</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="rjSplineIK.utils.curve.splitCurveToParametersByLength">
+<code class="descclassname">rjSplineIK.utils.curve.</code><code class="descname">splitCurveToParametersByLength</code><span class="sig-paren">(</span><em>curve</em>, <em>num</em><span class="sig-paren">)</span><a class="headerlink" href="#rjSplineIK.utils.curve.splitCurveToParametersByLength" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of parameters evenly spaced along a curve, based on the
+length of the curve. Ranges are normalizes to be between 0-1.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>curve</strong> (<em>str</em>) – </li>
+<li><strong>num</strong> (<em>int</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">parameters</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="rjSplineIK.utils.curve.splitCurveToParametersByParameter">
+<code class="descclassname">rjSplineIK.utils.curve.</code><code class="descname">splitCurveToParametersByParameter</code><span class="sig-paren">(</span><em>curve</em>, <em>num</em><span class="sig-paren">)</span><a class="headerlink" href="#rjSplineIK.utils.curve.splitCurveToParametersByParameter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of parameters evenly spaced along a curve, based on the
+division of its parameters. Ranges are normalizes to be between 0-1.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>curve</strong> (<em>str</em>) – </li>
+<li><strong>num</strong> (<em>int</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">parameters</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/rjSplineIK.utils.curve.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">rjSplineIK  &#39;&#39; documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, &#39;Robert Joosten&#39;.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.4.
+    </div>
+  </body>
+</html>

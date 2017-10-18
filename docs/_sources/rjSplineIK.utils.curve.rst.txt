@@ -1,0 +1,7 @@
+rjSplineIK\.utils\.curve module
+===============================
+
+.. automodule:: rjSplineIK.utils.curve
+    :members:
+    :undoc-members:
+    :show-inheritance:

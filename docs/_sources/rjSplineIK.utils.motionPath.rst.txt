@@ -1,0 +1,7 @@
+rjSplineIK\.utils\.motionPath module
+====================================
+
+.. automodule:: rjSplineIK.utils.motionPath
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,222 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>rjSplineIK package &#8212; rjSplineIK  &#39;&#39; documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     ' &#39;&#39;',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">rjSplineIK  &#39;&#39; documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="rjsplineik-package">
+<h1>rjSplineIK package<a class="headerlink" href="#rjsplineik-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rjSplineIK.utils.html">rjSplineIK.utils package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rjSplineIK.utils.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="rjSplineIK.utils.api.html">rjSplineIK.utils.api module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rjSplineIK.utils.attribute.html">rjSplineIK.utils.attribute module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rjSplineIK.utils.cluster.html">rjSplineIK.utils.cluster module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rjSplineIK.utils.colour.html">rjSplineIK.utils.colour module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rjSplineIK.utils.control.html">rjSplineIK.utils.control module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rjSplineIK.utils.controlShape.html">rjSplineIK.utils.controlShape module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rjSplineIK.utils.curve.html">rjSplineIK.utils.curve module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rjSplineIK.utils.math.html">rjSplineIK.utils.math module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rjSplineIK.utils.motionPath.html">rjSplineIK.utils.motionPath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rjSplineIK.utils.undo.html">rjSplineIK.utils.undo module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="rjSplineIK.utils.html#module-rjSplineIK.utils">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rjSplineIK.create.html">rjSplineIK.create module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rjSplineIK.settings.html">rjSplineIK.settings module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rjSplineIK.ui.html">rjSplineIK.ui module</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="module-rjSplineIK">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-rjSplineIK" title="Permalink to this headline">¶</a></h2>
+<p>Create a Spline IK setup on a curve. The setup features variable stretch and 
+squash, variable rotation and sliding on curve.</p>
+<div class="figure align-center">
+<img alt="https://github.com/robertjoosten/rjSplineIK/raw/master/data/header.png" src="https://github.com/robertjoosten/rjSplineIK/raw/master/data/header.png" />
+</div>
+<div class="section" id="installation">
+<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
+<p>Copy the <strong>rjSplineIK</strong> folder to your Maya scripts directory</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span><span class="o">/</span><span class="n">Users</span><span class="o">/&lt;</span><span class="n">USER</span><span class="o">&gt;/</span><span class="n">Documents</span><span class="o">/</span><span class="n">maya</span><span class="o">/</span><span class="n">scripts</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="usage">
+<h3>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h3>
+<p>Command line</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">rjSplineIK</span> <span class="k">import</span> <span class="n">SplineIK</span>
+
+<span class="n">splineIK</span> <span class="o">=</span> <span class="n">SplineIK</span><span class="p">()</span>
+<span class="n">splineIK</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+    <span class="n">name</span><span class="p">,</span>
+    <span class="n">curve</span><span class="p">,</span>
+    <span class="n">numJoints</span><span class="p">,</span>
+    <span class="n">upDirection</span><span class="o">=</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> 
+    <span class="n">worldUpDirection</span><span class="o">=</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> 
+    <span class="n">forwardDirection</span><span class="o">=</span><span class="s2">&quot;x&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>Display UI</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">rjSplineIK.ui</span>
+<span class="n">rjSplineIK</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>  
+</pre></div>
+</div>
+<div class="figure align-center" id="id1">
+<img alt="https://github.com/robertjoosten/rjSplineIK/raw/master/data/ui.png" src="https://github.com/robertjoosten/rjSplineIK/raw/master/data/ui.png" />
+<p class="caption"><span class="caption-text">UI example</span></p>
+</div>
+</div>
+<div class="section" id="note">
+<h3>Note<a class="headerlink" href="#note" title="Permalink to this headline">¶</a></h3>
+<p>The Spline IK module works on a curve and generates an joint chain that 
+sticks to it’s position on the curve. This means that stretch and squash will
+only occur in the areas that manipulates as opposed to it scaling as a whole.</p>
+<div class="figure align-center" id="id2">
+<img alt="https://github.com/robertjoosten/rjSplineIK/raw/master/data/stretchSquash.gif" src="https://github.com/robertjoosten/rjSplineIK/raw/master/data/stretchSquash.gif" />
+<p class="caption"><span class="caption-text">Stretch and Squash demo</span></p>
+</div>
+<p>The other benefit of using this module over a regular spline IK is the fact 
+that the twist is divided over the controls that are generated and not just 
+limited to the beginning and end.</p>
+<div class="figure align-center" id="id3">
+<img alt="https://github.com/robertjoosten/rjSplineIK/raw/master/data/partialTwist.gif" src="https://github.com/robertjoosten/rjSplineIK/raw/master/data/partialTwist.gif" />
+<p class="caption"><span class="caption-text">Partial Twist demo</span></p>
+</div>
+<div class="figure align-center" id="id4">
+<img alt="https://github.com/robertjoosten/rjSplineIK/raw/master/data/shift.gif" src="https://github.com/robertjoosten/rjSplineIK/raw/master/data/shift.gif" />
+<p class="caption"><span class="caption-text">Shift demo</span></p>
+</div>
+<p>Apart from the main settings, the control colour, position and orientation is 
+adjustable. This can be done on the Spline IK class before the create function
+is called.</p>
+<blockquote>
+<div><ul class="simple">
+<li>controlShape</li>
+<li>rootControlShape</li>
+<li>slideControlShape</li>
+<li>tangentControlShape</li>
+<li>controlColour</li>
+<li>rootControlColour</li>
+<li>slideControlColour</li>
+<li>tangentControlColour</li>
+<li>orientToCurve</li>
+<li>orientRootToCurve</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">rjSplineIK package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-rjSplineIK">Module contents</a><ul>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#note">Note</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/rjSplineIK.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">rjSplineIK  &#39;&#39; documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, &#39;Robert Joosten&#39;.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.4.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+rjSplineIK package
+==================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    rjSplineIK.utils
+
+Submodules
+----------
+
+.. toctree::
+
+   rjSplineIK.create
+   rjSplineIK.settings
+   rjSplineIK.ui
+
+Module contents
+---------------
+
+.. automodule:: rjSplineIK
+    :members:
+    :undoc-members:
+    :show-inheritance:

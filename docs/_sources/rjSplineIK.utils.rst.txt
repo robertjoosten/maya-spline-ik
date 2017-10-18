@@ -1,0 +1,26 @@
+rjSplineIK\.utils package
+=========================
+
+Submodules
+----------
+
+.. toctree::
+
+   rjSplineIK.utils.api
+   rjSplineIK.utils.attribute
+   rjSplineIK.utils.cluster
+   rjSplineIK.utils.colour
+   rjSplineIK.utils.control
+   rjSplineIK.utils.controlShape
+   rjSplineIK.utils.curve
+   rjSplineIK.utils.math
+   rjSplineIK.utils.motionPath
+   rjSplineIK.utils.undo
+
+Module contents
+---------------
+
+.. automodule:: rjSplineIK.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:

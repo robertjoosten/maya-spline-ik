@@ -1,0 +1,7 @@
+rjSplineIK\.utils\.math module
+==============================
+
+.. automodule:: rjSplineIK.utils.math
+    :members:
+    :undoc-members:
+    :show-inheritance:

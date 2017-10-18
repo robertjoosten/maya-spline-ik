@@ -1,13 +1,13 @@
 from maya import cmds
 from . import controlShape, curve, colour
 
-def createControlShape(name, shape, c, num=None):
+def createControlShape(name, shape, colour_, num=None):
     """ 
     Create a control with offset group.
 
     :param str name: Name of the control ( _ctrl will be appended )
     :param str shape: Shape of the control.
-    :param str c: Colour of the control.
+    :param str colour_: Colour of the control.
     :param int num: Number of control ( padding of 3 ).
     :return: name of offset and control
     :rtype: tuple
@@ -31,7 +31,7 @@ def createControlShape(name, shape, c, num=None):
     offset = cmds.group(w=True, em=True, n=offsetName)
 
     # set colour
-    colourString = colour.getColourFromString(c)
+    colourString = colour.getColourFromString(colour_)
     for s in shapes:
         cmds.setAttr("{0}.overrideEnabled".format(s), 1)
         cmds.setAttr("{0}.overrideColor".format(s), colourString)

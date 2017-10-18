@@ -1,0 +1,7 @@
+rjSplineIK\.ui module
+=====================
+
+.. automodule:: rjSplineIK.ui
+    :members:
+    :undoc-members:
+    :show-inheritance:
