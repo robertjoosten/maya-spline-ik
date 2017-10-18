@@ -32,6 +32,8 @@ Display UI
 .. figure:: https://github.com/robertjoosten/rjSplineIK/raw/master/data/ui.png
    :align: center
    
+   UI example
+   
 ::
     import rjSplineIK.ui
     rjSplineIK.ui.show()    

@@ -27,6 +27,7 @@ splineIK.create(
 Display UI:
 
 <p align="center"><img src="https://github.com/robertjoosten/rjSplineIK/raw/master/data/ui.png"></p>
+<p align="center"><b>UI example</b></p>
 
 ```python
 import rjSplineIK.ui
