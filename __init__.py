@@ -28,12 +28,13 @@ Command line
     )
 
 Display UI
-::
-    import rjSplineIK.ui
-    rjSplineIK.ui.show()    
 
 .. figure:: https://github.com/robertjoosten/rjSplineIK/raw/master/data/ui.png
    :align: center
+   
+::
+    import rjSplineIK.ui
+    rjSplineIK.ui.show()    
 
 Note
 ====

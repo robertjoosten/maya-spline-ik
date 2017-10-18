@@ -25,12 +25,13 @@ splineIK.create(
 ```
 
 Display UI:
+
+<p align="center"><img src="https://github.com/robertjoosten/rjSplineIK/raw/master/data/ui.png"></p>
+
 ```python
 import rjSplineIK.ui
 rjSplineIK.ui.show()  
 ```
-
-<p align="center"><img src="https://github.com/robertjoosten/rjSplineIK/raw/master/data/ui.png"></p>
 
 ## Note
 The Spline IK module works on a curve and generates an joint chain that sticks to it's position on the curve. This means that stretch and squash will only occur in the areas that manipulates as opposed to it scaling as a whole.
