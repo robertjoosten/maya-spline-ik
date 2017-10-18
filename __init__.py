@@ -27,10 +27,13 @@ Command line
         forwardDirection="x"
     )
 
-Display UI **NOT SUPPORTED YET**
+Display UI
 ::
     import rjSplineIK.ui
     rjSplineIK.ui.show()    
+
+.. figure:: https://github.com/robertjoosten/rjSplineIK/raw/master/data/ui.png
+   :align: center
 
 Note
 ====

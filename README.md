@@ -1,4 +1,5 @@
 # rjSplineIK
+<img align="right" src="https://github.com/robertjoosten/rjSplineIK/raw/master/icon/rjSplineIK.png">
 Create a Spline IK setup on a curve. The setup features variable stretch and squash, variable rotation and sliding on curve.
 
 <p align="center"><img src="https://github.com/robertjoosten/rjSplineIK/raw/master/data/header.png"></p>
@@ -23,11 +24,13 @@ splineIK.create(
 )
 ```
 
-Display UI **NOT SUPPORTED YET**:
+Display UI:
 ```python
 import rjSplineIK.ui
 rjSplineIK.ui.show()  
 ```
+
+<p align="center"><img src="https://github.com/robertjoosten/rjSplineIK/raw/master/data/ui.png"></p>
 
 ## Note
 The Spline IK module works on a curve and generates an joint chain that sticks to it's position on the curve. This means that stretch and squash will only occur in the areas that manipulates as opposed to it scaling as a whole.

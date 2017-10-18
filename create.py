@@ -65,6 +65,10 @@ class SplineIK(Settings):
 
     @property
     def name(self):
+        """
+        :return: name to use while creating the spline ik
+        :rtype: str
+        """
         return self._name
 
     @name.setter
@@ -75,6 +79,10 @@ class SplineIK(Settings):
 
     @property
     def curve(self):
+        """
+        :return: name of the curve to attach the ik to
+        :rtype: str
+        """
         return self._curve
 
     @curve.setter
@@ -83,44 +91,80 @@ class SplineIK(Settings):
 
     @property
     def curveShape(self):
+        """
+        :return: first shape of the curve
+        :rtype: str
+        """
         return cmds.listRelatives(self.curve, s=True)[0]
         
     # ------------------------------------------------------------------------
         
     @property
     def rootControl(self):
+        """
+        :return: name of root control
+        :rtype: str
+        """
         return self._rootControl
 
     @property
     def controls(self):
+        """
+        :return: list of all tweak controls
+        :rtype: list
+        """
         return self._controls
 
     @property
     def tangentControls(self):
+        """
+        :return: list of all tangent controls
+        :rtype: list
+        """
         return self._tangentControls
 
     # --------------------------------------------------------------------
 
     @property
     def slideControl(self):
+        """
+        :return: name of slide control
+        :rtype: str
+        """
         return self._slideControl
 
     @property
     def slideMinControl(self):
+        """
+        :return: name of slide control ( min )
+        :rtype: str
+        """
         return self._slideMinControl
 
     @property
     def slideMaxControl(self):
+        """
+        :return: name of slide control ( max )
+        :rtype: str
+        """
         return self._slideMaxControl
 
     # --------------------------------------------------------------------
 
     @property
     def rootJoint(self):
+        """
+        :return: name of root joint
+        :rtype: str
+        """
         return self._rootJoint
 
     @property
     def joints(self):
+        """
+        :return: list of joints that are attached to the curve
+        :rtype: list
+        """
         return self._joints
         
     # ------------------------------------------------------------------------
@@ -479,7 +523,7 @@ class SplineIK(Settings):
             cmds.select(root)
 
             jnt = cmds.joint(n="{0}_jnt_{1:03d}".format(self.name, i + 1))
-            cmds.setAttr("{0}.displayLocalAxis".format(jnt), 1)
+            #cmds.setAttr("{0}.displayLocalAxis".format(jnt), 1)
             cmds.setAttr("{0}.inheritsTransform".format(jnt), 0)
             cmds.setAttr("{0}.segmentScaleCompensate".format(jnt), 0)
             cmds.setAttr("{0}.radius".format(jnt), 0.1)
@@ -1091,7 +1135,7 @@ class SplineIK(Settings):
     def create(
             self, 
             name,
-            c,
+            nurbsCurve,
             numJoints, 
             upDirection="y", 
             worldUpDirection="y", 
@@ -1103,7 +1147,7 @@ class SplineIK(Settings):
         parsed with various variables to customise the result.
         
         :param name: name that is used to prefix all nodes
-        :param c: curve to attach the Spline IK to.
+        :param nurbsCurve: curve to attach the Spline IK to.
         :param numJoints: number of joints to be distributed on the curve
         :param upDirection: "x", "y" or "z", default "y"
         :param worldUpDirection: "x", "y" or "z", default "y"
@@ -1111,7 +1155,7 @@ class SplineIK(Settings):
         """
         # variables
         self.name = name
-        self.curve = c
+        self.curve = nurbsCurve
         self.numJoints = numJoints
         self.upDirection = upDirection
         self.forwardDirection = forwardDirection
