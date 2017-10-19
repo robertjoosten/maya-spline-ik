@@ -823,8 +823,9 @@ class SplineIK(Settings):
             controls.append(ctrl)
             
         # scale controls
-        for ctrl in controls[1:]:
-            cmds.setAttr("{0}.scale".format(ctrl), 0.5, 0.5, 0.5)
+        scale = [0.75, 0.5, 0.5]
+        for ctrl, s in zip(controls, scale):
+            cmds.setAttr("{0}.scale".format(ctrl), s, s, s)
             cmds.makeIdentity(ctrl, apply=True, scale=True)
         
         # parent controls
