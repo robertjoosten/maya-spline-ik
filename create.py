@@ -249,7 +249,7 @@ class SplineIK(Settings):
         )
 
         # create line
-        name = "{0}_line".format(ctrl.replace("ctrl", "line"))
+        name = ctrl.replace("ctrl", "line")
         line, _ = curve.createCurveShape(name, [(0,0,0),(0,0,0)])
 
         cmds.setAttr("{0}.overrideEnabled".format(line), 1)
@@ -262,7 +262,7 @@ class SplineIK(Settings):
         for i, driver in enumerate([ctrl, parent]):
             dm = cmds.createNode(
                 "decomposeMatrix",
-                n="{0}_line_dm_{1:03d}".format(name, i+1)
+                n="{0}_dm_{1:03d}".format(name, i+1)
             )
 
             cmds.connectAttr(
