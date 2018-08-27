@@ -1,5 +1,5 @@
 # maya-spline-ik
-<p align="center"><img src="icons/SIK_icon.png?raw=true"></p>
+<p align="right"><img src="icons/SIK_icon.png?raw=true"></p>
 Create a Spline IK setup on a curve. The setup features variable stretch and squash, variable rotation and sliding on curve.
 
 <p align="center"><img src="docs/_images/SIK_header.png?raw=true"></p>
