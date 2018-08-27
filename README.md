@@ -34,7 +34,7 @@ import rjSplineIK.ui
 rjSplineIK.ui.show()  
 ```
 
-<p align="center"><img src="docs/_images/SIK_uiExample.gif?raw=true"></p>
+<p align="center"><img src="docs/_images/SIK_uiExample.png?raw=true"></p>
 <p align="center"><b>UI example</b></p>
 
 ## Note
