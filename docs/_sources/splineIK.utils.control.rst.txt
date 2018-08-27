@@ -1,0 +1,7 @@
+splineIK\.utils\.control module
+===============================
+
+.. automodule:: splineIK.utils.control
+    :members:
+    :undoc-members:
+    :show-inheritance:

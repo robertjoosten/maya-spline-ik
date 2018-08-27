@@ -1,7 +1,0 @@
-rjSplineIK\.utils\.control module
-=================================
-
-.. automodule:: rjSplineIK.utils.control
-    :members:
-    :undoc-members:
-    :show-inheritance:

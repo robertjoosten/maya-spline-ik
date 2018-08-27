@@ -1,0 +1,7 @@
+splineIK\.utils\.attribute module
+=================================
+
+.. automodule:: splineIK.utils.attribute
+    :members:
+    :undoc-members:
+    :show-inheritance:

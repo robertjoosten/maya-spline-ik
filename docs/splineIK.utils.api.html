@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>splineIK &#8212; splineIK  &#39;&#39; documentation</title>
+    <title>splineIK.utils.api module &#8212; splineIK  &#39;&#39; documentation</title>
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript">
@@ -43,32 +43,62 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="splineik">
-<h1>splineIK<a class="headerlink" href="#splineik" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="splineIK.html">splineIK package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="splineIK.html#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="splineIK.html#usage">Usage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="splineIK.html#note">Note</a></li>
-<li class="toctree-l2"><a class="reference internal" href="splineIK.html#subpackages">Subpackages</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="splineIK.utils.html">splineIK.utils package</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="splineIK.utils.html#submodules">Submodules</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="splineIK.html#submodules">Submodules</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="splineIK.create.html">splineIK.create module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="splineIK.install.html">splineIK.install module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="splineIK.settings.html">splineIK.settings module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="splineIK.ui.html">splineIK.ui module</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
+  <div class="section" id="module-splineIK.utils.api">
+<span id="splineik-utils-api-module"></span><h1>splineIK.utils.api module<a class="headerlink" href="#module-splineIK.utils.api" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="splineIK.utils.api.asMFnNurbsCurve">
+<code class="descclassname">splineIK.utils.api.</code><code class="descname">asMFnNurbsCurve</code><span class="sig-paren">(</span><em>curve</em><span class="sig-paren">)</span><a class="headerlink" href="#splineIK.utils.api.asMFnNurbsCurve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert a node into a OpenMaya.MFnNurbsCurve.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>node</strong> (<em>str</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">MFnNurbsCurve of parsed curve</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">OpenMaya.MFnNurbsCurve</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="splineIK.utils.api.toMDagPath">
+<code class="descclassname">splineIK.utils.api.</code><code class="descname">toMDagPath</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="headerlink" href="#splineIK.utils.api.toMDagPath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert a node into a OpenMaya.MDagPath.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>node</strong> (<em>str</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">MDagPath of parsed node</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">OpenMaya.MDagPath</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="splineIK.utils.api.toMObject">
+<code class="descclassname">splineIK.utils.api.</code><code class="descname">toMObject</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="headerlink" href="#splineIK.utils.api.toMObject" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert a node into a OpenMaya.MObject.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>node</strong> (<em>str</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">MObject of parsed node</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">OpenMaya.MObject</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
 </div>
 
 
@@ -80,7 +110,7 @@
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/modules.rst.txt"
+      <li><a href="_sources/splineIK.utils.api.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>

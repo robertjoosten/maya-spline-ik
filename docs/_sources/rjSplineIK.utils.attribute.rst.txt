@@ -1,7 +1,0 @@
-rjSplineIK\.utils\.attribute module
-===================================
-
-.. automodule:: rjSplineIK.utils.attribute
-    :members:
-    :undoc-members:
-    :show-inheritance:

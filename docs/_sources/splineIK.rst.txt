@@ -1,0 +1,25 @@
+splineIK package
+================
+
+.. automodule:: splineIK
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Subpackages
+-----------
+
+.. toctree::
+
+    splineIK.utils
+
+Submodules
+----------
+
+.. toctree::
+
+   splineIK.create
+   splineIK.install
+   splineIK.settings
+   splineIK.ui
+

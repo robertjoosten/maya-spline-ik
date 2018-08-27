@@ -1,7 +1,0 @@
-rjSplineIK\.create module
-=========================
-
-.. automodule:: rjSplineIK.create
-    :members:
-    :undoc-members:
-    :show-inheritance:

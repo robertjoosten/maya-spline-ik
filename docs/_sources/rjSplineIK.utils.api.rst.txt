@@ -1,7 +1,0 @@
-rjSplineIK\.utils\.api module
-=============================
-
-.. automodule:: rjSplineIK.utils.api
-    :members:
-    :undoc-members:
-    :show-inheritance:

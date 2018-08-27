@@ -1,0 +1,7 @@
+splineIK\.utils\.curve module
+=============================
+
+.. automodule:: splineIK.utils.curve
+    :members:
+    :undoc-members:
+    :show-inheritance:

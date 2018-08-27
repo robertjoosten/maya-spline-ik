@@ -1,0 +1,7 @@
+splineIK\.settings module
+=========================
+
+.. automodule:: splineIK.settings
+    :members:
+    :undoc-members:
+    :show-inheritance:

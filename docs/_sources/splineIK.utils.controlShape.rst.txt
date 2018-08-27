@@ -1,0 +1,7 @@
+splineIK\.utils\.controlShape module
+====================================
+
+.. automodule:: splineIK.utils.controlShape
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,7 @@
+splineIK\.install module
+========================
+
+.. automodule:: splineIK.install
+    :members:
+    :undoc-members:
+    :show-inheritance:

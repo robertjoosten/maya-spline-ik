@@ -1,0 +1,7 @@
+splineIK\.utils\.undo module
+============================
+
+.. automodule:: splineIK.utils.undo
+    :members:
+    :undoc-members:
+    :show-inheritance:

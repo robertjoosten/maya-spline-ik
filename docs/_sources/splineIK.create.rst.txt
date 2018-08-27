@@ -1,0 +1,7 @@
+splineIK\.create module
+=======================
+
+.. automodule:: splineIK.create
+    :members:
+    :undoc-members:
+    :show-inheritance:

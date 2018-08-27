@@ -1,0 +1,7 @@
+splineIK\.utils\.api module
+===========================
+
+.. automodule:: splineIK.utils.api
+    :members:
+    :undoc-members:
+    :show-inheritance:

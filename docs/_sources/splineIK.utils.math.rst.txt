@@ -1,0 +1,7 @@
+splineIK\.utils\.math module
+============================
+
+.. automodule:: splineIK.utils.math
+    :members:
+    :undoc-members:
+    :show-inheritance:

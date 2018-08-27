@@ -1,0 +1,7 @@
+splineIK\.utils\.motionPath module
+==================================
+
+.. automodule:: splineIK.utils.motionPath
+    :members:
+    :undoc-members:
+    :show-inheritance:

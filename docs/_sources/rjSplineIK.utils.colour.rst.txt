@@ -1,7 +1,0 @@
-rjSplineIK\.utils\.colour module
-================================
-
-.. automodule:: rjSplineIK.utils.colour
-    :members:
-    :undoc-members:
-    :show-inheritance:

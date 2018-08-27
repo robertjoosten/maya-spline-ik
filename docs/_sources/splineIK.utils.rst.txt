@@ -1,0 +1,24 @@
+splineIK\.utils package
+=======================
+
+.. automodule:: splineIK.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+
+   splineIK.utils.api
+   splineIK.utils.attribute
+   splineIK.utils.cluster
+   splineIK.utils.colour
+   splineIK.utils.control
+   splineIK.utils.controlShape
+   splineIK.utils.curve
+   splineIK.utils.math
+   splineIK.utils.motionPath
+   splineIK.utils.undo
+

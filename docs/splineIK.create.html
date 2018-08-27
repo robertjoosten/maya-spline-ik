@@ -1,0 +1,301 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>splineIK.create module &#8212; splineIK  &#39;&#39; documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     ' &#39;&#39;',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">splineIK  &#39;&#39; documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-splineIK.create">
+<span id="splineik-create-module"></span><h1>splineIK.create module<a class="headerlink" href="#module-splineIK.create" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="splineIK.create.SplineIK">
+<em class="property">class </em><code class="descclassname">splineIK.create.</code><code class="descname">SplineIK</code><a class="headerlink" href="#splineIK.create.SplineIK" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="splineIK.settings.html#splineIK.settings.Settings" title="splineIK.settings.Settings"><code class="xref py py-class docutils literal"><span class="pre">splineIK.settings.Settings</span></code></a></p>
+<p>The Spline IK module works on a curve and generates an joint chain
+that sticks to it’s position on the curve. This means that stretch
+and squash will only occur in the areas that manipulates as opposed
+to it scaling as a whole.</p>
+<p>The other benefit of using this module over a regular spline IK is
+the fact that the twist is divided over the controls that are
+generated and not just limited to the beginning and end.</p>
+<p>Once the class is initialized the user can change attributes that
+are defined in the <code class="xref py py-class docutils literal"><span class="pre">rjSplineIK.settings.Settings</span></code> class that 
+gets inherited.</p>
+<p>Once the user parameters are set the <a class="reference internal" href="#splineIK.create.SplineIK.create" title="splineIK.create.SplineIK.create"><code class="xref py py-func docutils literal"><span class="pre">SplineIK.create()</span></code></a> 
+can be ran.</p>
+<dl class="attribute">
+<dt id="splineIK.create.SplineIK.controls">
+<code class="descname">controls</code><a class="headerlink" href="#splineIK.create.SplineIK.controls" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">list of all tweak controls</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="splineIK.create.SplineIK.create">
+<code class="descname">create</code><span class="sig-paren">(</span><em>name</em>, <em>curve_</em>, <em>numJoints</em>, <em>upDirection='y'</em>, <em>worldUpDirection='y'</em>, <em>forwardDirection='x'</em><span class="sig-paren">)</span><a class="headerlink" href="#splineIK.create.SplineIK.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the spline IK, besides changing attributes from the
+Settings class, the create function itself can also be
+parsed with various variables to customise the result.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>name</strong> – name that is used to prefix all nodes</li>
+<li><strong>curve</strong> – curve to attach the Spline IK to.</li>
+<li><strong>numJoints</strong> – number of joints to be distributed on the curve</li>
+<li><strong>upDirection</strong> – “x”, “y” or “z”, default “y”</li>
+<li><strong>worldUpDirection</strong> – “x”, “y” or “z”, default “y”</li>
+<li><strong>forwardDirection</strong> – “x”, “y” or “z”, default “x”</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="splineIK.create.SplineIK.curve">
+<code class="descname">curve</code><a class="headerlink" href="#splineIK.create.SplineIK.curve" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">name of the curve to attach the ik to</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="splineIK.create.SplineIK.curveShape">
+<code class="descname">curveShape</code><a class="headerlink" href="#splineIK.create.SplineIK.curveShape" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">first shape of the curve</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="splineIK.create.SplineIK.joints">
+<code class="descname">joints</code><a class="headerlink" href="#splineIK.create.SplineIK.joints" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">list of joints that are attached to the curve</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="splineIK.create.SplineIK.name">
+<code class="descname">name</code><a class="headerlink" href="#splineIK.create.SplineIK.name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">name to use while creating the spline ik</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="splineIK.create.SplineIK.rootControl">
+<code class="descname">rootControl</code><a class="headerlink" href="#splineIK.create.SplineIK.rootControl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">name of root control</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="splineIK.create.SplineIK.rootJoint">
+<code class="descname">rootJoint</code><a class="headerlink" href="#splineIK.create.SplineIK.rootJoint" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">name of root joint</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="splineIK.create.SplineIK.slideControl">
+<code class="descname">slideControl</code><a class="headerlink" href="#splineIK.create.SplineIK.slideControl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">name of slide control</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="splineIK.create.SplineIK.slideMaxControl">
+<code class="descname">slideMaxControl</code><a class="headerlink" href="#splineIK.create.SplineIK.slideMaxControl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">name of slide control ( max )</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="splineIK.create.SplineIK.slideMinControl">
+<code class="descname">slideMinControl</code><a class="headerlink" href="#splineIK.create.SplineIK.slideMinControl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">name of slide control ( min )</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="splineIK.create.SplineIK.tangentControls">
+<code class="descname">tangentControls</code><a class="headerlink" href="#splineIK.create.SplineIK.tangentControls" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">list of all tangent controls</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/splineIK.create.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">splineIK  &#39;&#39; documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, &#39;Robert Joosten&#39;.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.4.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+splineIK\.utils\.cluster module
+===============================
+
+.. automodule:: splineIK.utils.cluster
+    :members:
+    :undoc-members:
+    :show-inheritance:

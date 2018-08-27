@@ -1,7 +1,0 @@
-rjSplineIK\.settings module
-===========================
-
-.. automodule:: rjSplineIK.settings
-    :members:
-    :undoc-members:
-    :show-inheritance:

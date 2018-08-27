@@ -1,0 +1,7 @@
+splineIK\.utils\.colour module
+==============================
+
+.. automodule:: splineIK.utils.colour
+    :members:
+    :undoc-members:
+    :show-inheritance:

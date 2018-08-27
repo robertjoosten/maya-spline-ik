@@ -1,7 +1,0 @@
-rjSplineIK\.utils\.cluster module
-=================================
-
-.. automodule:: rjSplineIK.utils.cluster
-    :members:
-    :undoc-members:
-    :show-inheritance:
