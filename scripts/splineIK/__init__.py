@@ -18,10 +18,10 @@ user wishes to not use the shelf button the following commands can be used.
 
 Command line:
 ::
-    from rjSplineIK import SplineIK
+    from splineIK import SplineIK
     
-    splineIK = SplineIK()
-    splineIK.create(
+    sik = SplineIK()
+    sik.create(
         name,
         curve,
         numJoints,
@@ -32,8 +32,8 @@ Command line:
 
 Display UI:
 ::
-    import rjSplineIK.ui
-    rjSplineIK.ui.show()
+    import splineIK.ui
+    splineIK.ui.show()
 
 .. figure:: /_images/SIK_uiExample.png
    :align: center

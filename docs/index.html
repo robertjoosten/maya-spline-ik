@@ -63,10 +63,10 @@ squash, variable rotation and sliding on curve.</p>
 to the ui, this way the user doesn’t need to worry about any of the code. If
 user wishes to not use the shelf button the following commands can be used.</p>
 <p>Command line:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">rjSplineIK</span> <span class="k">import</span> <span class="n">SplineIK</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">splineIK</span> <span class="k">import</span> <span class="n">SplineIK</span>
 
-<span class="n">splineIK</span> <span class="o">=</span> <span class="n">SplineIK</span><span class="p">()</span>
-<span class="n">splineIK</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+<span class="n">sik</span> <span class="o">=</span> <span class="n">SplineIK</span><span class="p">()</span>
+<span class="n">sik</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
     <span class="n">name</span><span class="p">,</span>
     <span class="n">curve</span><span class="p">,</span>
     <span class="n">numJoints</span><span class="p">,</span>
@@ -77,8 +77,8 @@ user wishes to not use the shelf button the following commands can be used.</p>
 </pre></div>
 </div>
 <p>Display UI:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">rjSplineIK.ui</span>
-<span class="n">rjSplineIK</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">splineIK.ui</span>
+<span class="n">splineIK</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 <div class="figure align-center" id="id1">
